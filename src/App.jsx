@@ -54,12 +54,12 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="calc">
+        <div className='calc'>
           <div className="output">
             <input type="text" id="screen" value={input} onChange={handleValue} readOnly/>
             <input type="text" id="screen" value={result} readOnly />
           </div>
-          <div className="buttons">
+          <div>
             <div className="row">
               <button onClick={cleardisplay} className="btn2"> 
                 AC

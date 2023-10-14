@@ -1,12 +1,20 @@
-.calc{
+body {
+  font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+.calc{
   width: 350px;
   height: 560px;
+  max-width: 400px;
   background: rgb(9, 9, 9);
-  margin-left: 600px;
   padding: 20px;
+  padding-right: 40px;
+  border-radius: 10px;
 }
 #screen{
   width: 95%;
@@ -19,6 +27,12 @@
   font-size: xx-large;
   background-color: rgb(9, 9, 9);
   color: white;
+  text-align: right;
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 .btn{
   width: 60px;
@@ -31,7 +45,7 @@
   color: white;
 }
 .btn0{
-  width: 145px;
+  width: 150px;
   height: 44px;
   margin-left: 23px;
   margin-top: 20px;
